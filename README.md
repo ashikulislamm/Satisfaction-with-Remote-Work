@@ -1,10 +1,6 @@
 # Remote Work Satisfaction Prediction
 
-A comprehensive machine learning project that predicts employee satisfaction with remote work using AutoGluon and XGBoost, with advanced techniques including SMOTE for class balancing and SHAP for model interpretability.
-
-## 📋 Overview
-
-This project analyzes the impact of remote work on mental health and builds a binary classification model to predict employee satisfaction with remote work arrangements. The pipeline includes:
+A machine learning project that predicts employee satisfaction with remote work using AutoGluon and XGBoost, with advanced techniques including SMOTE for class balancing and SHAP for model interpretability.This project analyzes the impact of remote work on mental health and builds a binary classification model to predict employee satisfaction with remote work arrangements. The pipeline includes:
 
 - **Data Processing**: PySpark-based data cleaning and preprocessing
 - **Class Balancing**: SMOTENC (Synthetic Minority Over-sampling Technique for Nominal and Continuous)
@@ -49,15 +45,6 @@ pip install autogluon --no-cache-dir
 
 # Install additional dependencies
 pip install imbalanced-learn shap xgboost pyspark matplotlib seaborn
-```
-
-## 📁 Project Structure
-
-```
-Satisfaction with Remote Work/
-├── Remote_Work_Satisfaction.ipynb    # Main notebook with complete pipeline
-├── Impact_of_Remote_Work_on_Mental_Health.csv  # Dataset (not included)
-└── README.md                          # This file
 ```
 
 ## 🔄 Pipeline Workflow
@@ -200,13 +187,5 @@ The project emphasizes explainability through:
 - **Time Limits**: Training is capped at 30 minutes; adjust `time_limit` parameter as needed
 - **Google Colab Path**: The CSV path `/content/...` suggests Google Colab usage; update for local environments
 
-
-## 🤝 Contributing
-
-This notebook is designed for educational and research purposes. Feel free to:
-- Experiment with different AutoGluon presets (`medium_quality`, `optimize_for_deployment`)
-- Try different SMOTE sampling strategies
-- Add additional feature engineering steps
-- Implement cross-validation on the full dataset
 
 **Framework Versions**: AutoGluon (latest), PySpark (latest), XGBoost (latest), SHAP (latest)
